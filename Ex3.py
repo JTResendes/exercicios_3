@@ -10,6 +10,7 @@ import random
 
 
 def get_random(ini, fim):
+
     """
     Esta função devolve um número aleatório entre ini e fim inclusive
     :param ini: inicío do intervalo
@@ -17,3 +18,25 @@ def get_random(ini, fim):
     :return: número aleatório
     """
     return random.randrange(ini, fim + 1)
+    list(ini, fim +1 )
+
+
+
+
+
+
+if __name__ == '__main__':
+    continuar = 's'
+    while continuar == 's':
+        num = int(input()("Insira o numero"))
+        if get_random(num):
+            print(f' A lista {num}é par.')
+        else:
+            print(f' A lista {num}é impar.')
+            continuar
+
+
+
+
+
+
