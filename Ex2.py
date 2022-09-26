@@ -9,39 +9,34 @@ Após o utilizador ter inderido a frase apresente:
  - Quantos numeros tem a frase
  - Apresente a frase invertida. Exemplo: A frase é 'Bom dia!' deve dar '!aid moB'
 """
-import re
-
-frase = "Boas tardes"
 
 
-def contar_letras(string):
-    qtt_minus = 0
-    qtt_maisc = 0
+if __name__ == '__main__':
+    frase = input('Insira frase:')
+    palavras = frase.split(' ')
+    num_vogais = 0
+    maiusculas = 0
+    minusculas = 0
+    numeros = 0
 
-    for i in range(len(string)):
-        if string[i].islower():
-            qtt_minus += 1
-        elif string[i].isupper():
-            qtt_maisc += 1
+    vogais = 'aeiou'
+    for char in frase:
+        if char in vogais:
+            num_vogais += 1
+        if char.isalpha() and char != '':
+            if char .islower():
+                minusculas += 1
+            else:
+                maiusculas += 1
+        elif char.isalnum():
+            numeros += 1
 
-    return qtt_minus, qtt_maisc
-
-
-count_chars = {}
-for char in frase:
-    if char not in count_chars:
-        count_chars[char] = 0
-    count_chars[char] += 1
-
-for char in count_chars:
-    print('A Frase tem {} {}'.format(count_chars[char], char))
-
-comprimento = len(frase)
-palavras = len(frase.split())
-qtt_minus, qtt_maisc = contar_letras(frase)
-print("Quantidade de letras minúsculas: %d" % qtt_minus)
-print("Quantidade de letras maiúsculas: %d" % qtt_maisc)
-
-print(f'Palavras: {palavras}')
-print(f'Comprimento: {comprimento}')
+    print(f'Comprimento:{len(frase)}')
+    print(f'Palavras:{len(palavras)}')
+    print(f'Vogais {num_vogais}')
+    print(f'Maiusculas {maiusculas}')
+    print(f'Minusculas {minusculas}')
+    print(f'Números {numeros}')
+    frase = frase[::-1]
+    print(frase)
 # https://acervolima.com/programa-python-para-calcular-o-numero-de-palavras-e-caracteres-na-string/
