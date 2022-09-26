@@ -9,9 +9,11 @@ Após o utilizador ter inserido os 5 valores apresente:
 - A média das vendas
 """
 
-listaVendas = [100, 50, 200, 300, 400]
+print(f'Insira 5 dados')
+listaVendas = [int(input()) for c in range(5)]  # 100, 50, 200, 300, 400 f'Insira {ndados -1} valores inteiros'
+soma = listaVendas.__len__()
 listailhas = ['Terceira', 'Pico', 'Faial', 'São Jorge', 'Graciosa']
-media = sum(listaVendas) / 5
+media = sum(listaVendas) / soma
 soma = sum(listaVendas)
 minimo = min(listaVendas)
 maximo = max(listaVendas)
