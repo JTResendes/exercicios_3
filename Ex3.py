@@ -1,10 +1,15 @@
 """
 Complete o programa
-
+Perguntar quantos números quer
 Pergunte ao utilizador qual é o intervalo para obter numeros aleatórios
 Pergunte se deseja ver apenas pares, apenas impares ou apenas primos
 Mostre todos os números aleatórios
 Mostre todos os números que satisfazem o pedido do utilizador
+
+BREAK - interrompe o seu ciclo e passa ao próximo
+continue- Volta ao inicio do ciclo
+switchcase - opção em que tem de se fzr comparaçoes
+match - iguala
 """
 import random
 

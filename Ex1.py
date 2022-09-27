@@ -7,6 +7,7 @@ Após o utilizador ter inserido os 5 valores apresente:
 - O menor valor inserido
 - O maior valor inserido
 - A média das vendas
+FUNÇÕES GLOBAIS - FORA DA FUNÇÃO
 """
 
 print(f'Insira 5 dados')

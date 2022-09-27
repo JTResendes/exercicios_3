@@ -8,6 +8,8 @@ Após o utilizador ter inderido a frase apresente:
  - Quantas letras minusculas tem a frase
  - Quantos numeros tem a frase
  - Apresente a frase invertida. Exemplo: A frase é 'Bom dia!' deve dar '!aid moB'
+
+ exception - INTERSETA O ERRO
 """
 
 
