@@ -10,7 +10,6 @@ Após o utilizador ter inserido os 5 valores apresente:
 //zip
 """
 
-
 ilhas = ['Terceira', 'Graciosa', 'Pico', 'Faial', 'São Jorge']
 
 if __name__ == '__main__':
@@ -27,7 +26,12 @@ if __name__ == '__main__':
             menor = vendas[x]
         if vendas[x] > maior1:
             maior1 = vendas[x]
-            if maior1
+            #menor valor com as duas listas juntas
 
-    print(f'O maior é {maior1} ilha {ilhas}.')
+            total = 0
+            for v in vendas:
+                total += v
 
+                media = total / len(vendas)
+
+    print(f'O total é {sum(vendas)} e a média é {media}.')
