@@ -53,7 +53,7 @@ if __name__ == '__main__':
             out1 = f'O numero {numero} é par'
         else:
             out1 = f'O numero {numero} é impar'
-        if divisores(numero)  == 2:
+        if divisores(numero) == 2:
             out2 = 'e primo'
         else:
             out2 = ''
