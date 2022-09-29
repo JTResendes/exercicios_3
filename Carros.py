@@ -61,3 +61,4 @@ if __name__ == '__main__':
 
             print(f'total_linha ={total_vendas}')
             print(f'total_vendas ={total_linha}')
+
