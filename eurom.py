@@ -1,7 +1,8 @@
-# Sortear 5 numeros situados em 1 e 50 detro da lista
+# 5 numeros e 2 estrelas, bónus caso esteja ordenado de forma crescente, 50 numeros e 12 estrelas, 5 apostas
 from random import random
 
-lista = [0, 0, 0, 0, 0]
+listaN = [0, 0, 0, 0, 0]
+listaE = [0, 0]
 
 
 def get_random(ini, fim):
@@ -13,13 +14,9 @@ def get_random(ini, fim):
     """
     return random.randrange(ini, fim + 1)
 
+    for x in range(listaN, listaE + 1):
+        num_random = get_random(listaN, listaE)
+        list_random.insert(x, num_random)
 
-if __name__ == '__main__':
-    nums = [0, 0, 0, 0]
-    for x in range(len(nums)):
 
-        while True:
-            onumero = get_random(1, 5)
 
-        if onumero = 
-    print(nums)
