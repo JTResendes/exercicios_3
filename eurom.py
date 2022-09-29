@@ -1,8 +1,4 @@
-# 5 numeros e 2 estrelas, bónus caso esteja ordenado de forma crescente, 50 numeros e 12 estrelas, 5 apostas
-from random import random
-
-listaN = [0, 0, 0, 0, 0]
-listaE = [0, 0]
+import random
 
 
 def get_random(ini, fim):
@@ -14,9 +10,22 @@ def get_random(ini, fim):
     """
     return random.randrange(ini, fim + 1)
 
-    for x in range(listaN, listaE + 1):
-        num_random = get_random(listaN, listaE)
-        list_random.insert(x, num_random)
 
+if __name__ == '__main__':
+    num = [0, 0, 0, 0, 0]
+    estrelas = [0, 0]
+    for x in range(len(num)):
+        while True:
+            numero = get_random(1, 50)
+            if numero not in num:
+                num[x] = numero
+                break
+    for x in range(len(estrelas)):
+        while True:
+            numero = get_random(1, 12)
+            if numero not in estrelas:
+                estrelas[x] = numero
+                break
 
-
+    print(num)
+    print(estrelas)

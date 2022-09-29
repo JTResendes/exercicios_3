@@ -21,5 +21,7 @@ if __name__ == '__main__':
         while True:
             onumero = get_random(1, 5)
 
-        if onumero = 
+        if onumero not in nums:
+            onumero[x] = nums
+
     print(nums)
