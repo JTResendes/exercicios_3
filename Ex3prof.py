@@ -14,4 +14,5 @@ if __name__ == '__main__':
         else:
             print('A frase tem que terminar com um deste pontos ".", "!", "?".')
             x = 0
-#tirar dúvida sobre caracteres siguidos
+
+#tirar dúvida sobre caracteres seguidos
